@@ -1,0 +1,156 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #fff
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    padding: 5vw 15vw;
+    overflow: hidden;
+}
+#nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+#nav h1{
+    font-size: 2.2vw;
+}
+
+.card{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+}
+.card span{
+    font-size: 2vw;
+}
+.card h2{
+    font-size: 1vw;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #222;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.5vw;
+}
+#cards{
+    width: 100%;
+    /* background-color: rgb(255, 228, 196); */
+    height: 70vh;
+    margin-top: 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1vw 2vw;
+    overflow: auto;
+}
+.box{
+    width: 250px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.503);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0.3vw;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding: 0.5vw 0;
+}
+.box .img{
+    width: 100%;
+    height: 60%;
+
+}
+.box h1{
+    font-size: 1.5vw;
+    font-weight: 5000;
+    text-transform: capitalize;
+    margin-top: 0.1vw;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+}
+.box button{
+    padding: 0.5vw 2vw;
+    color: #222;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+   
+}
+
+@media (min-width:350px) and (max-width:800px) {
+    #nav h1{
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    #nav{
+       margin-top: 5vw;
+    }
+    .card span{
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    .card h2{
+        font-size: 3vw;
+        padding: 1vw;
+    }
+    #cards{
+        margin-top: 7vw;
+    }
+
+    .box h1{
+        font-size: 5vw;
+    }
+}
